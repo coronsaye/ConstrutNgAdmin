@@ -13,231 +13,218 @@ export interface NavData {
 
 export const navItems: NavData[] = [
   {
-    name: 'Dashboard',
+    title: true,
+    name: 'Dashboard'
+  },
+  {
+    name: 'Main Dashboard',
     url: '/dashboard',
     icon: 'icon-speedometer',
-    badge: {
-      variant: 'info',
-      text: 'NEW'
-    }
+
   },
   {
     title: true,
-    name: 'Theme'
+    name: 'Orders'
   },
   {
-    name: 'Colors',
-    url: '/theme/colors',
+    name: 'Manage Orders',
+    url: '/product/orders',
     icon: 'icon-drop'
   },
   {
-    name: 'Typography',
+    name: 'Track Orders',
     url: '/theme/typography',
     icon: 'icon-pencil'
   },
   {
     title: true,
-    name: 'Components'
+    name: 'Admin'
   },
   {
-    name: 'Base',
-    url: '/base',
+    name: 'User',
+    url: '/User',
     icon: 'icon-puzzle',
     children: [
       {
-        name: 'Cards',
-        url: '/base/cards',
+        name: 'List Users',
+        url: '/user/users',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Carousels',
-        url: '/base/carousels',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Collapses',
-        url: '/base/collapses',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Forms',
-        url: '/base/forms',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Pagination',
-        url: '/base/paginations',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Popovers',
-        url: '/base/popovers',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Progress',
-        url: '/base/progress',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Switches',
-        url: '/base/switches',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Tables',
-        url: '/base/tables',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Tabs',
-        url: '/base/tabs',
-        icon: 'icon-puzzle'
-      },
-      {
-        name: 'Tooltips',
-        url: '/base/tooltips',
+        name: 'Add User',
+        url: '/user/new-user',
         icon: 'icon-puzzle'
       }
     ]
   },
+
   {
-    name: 'Buttons',
-    url: '/buttons',
-    icon: 'icon-cursor',
+    name: 'User Group',
+    url: '/user-groups',
+    icon: 'icon-puzzle',
     children: [
       {
-        name: 'Buttons',
-        url: '/buttons/buttons',
-        icon: 'icon-cursor'
+        name: 'List Groups',
+        url: '/user-groups/user-groups',
+        icon: 'icon-puzzle'
       },
       {
-        name: 'Dropdowns',
-        url: '/buttons/dropdowns',
-        icon: 'icon-cursor'
-      },
-      {
-        name: 'Brand Buttons',
-        url: '/buttons/brand-buttons',
-        icon: 'icon-cursor'
+        name: 'Add Group',
+        url: '/user-groups/new-user-group',
+        icon: 'icon-puzzle'
       }
     ]
   },
   {
-    name: 'Charts',
-    url: '/charts',
-    icon: 'icon-pie-chart'
-  },
-  {
-    name: 'Icons',
-    url: '/icons',
-    icon: 'icon-star',
+    name: 'Permissions',
+    url: '/user-group-actions',
+    icon: 'icon-puzzle',
     children: [
       {
-        name: 'CoreUI Icons',
-        url: '/icons/coreui-icons',
-        icon: 'icon-star',
-        badge: {
-          variant: 'success',
-          text: 'NEW'
-        }
+        name: 'List Permission',
+        url: '/user-group-actions/group-actions',
+        icon: 'icon-puzzle'
       },
       {
-        name: 'Flags',
-        url: '/icons/flags',
-        icon: 'icon-star'
-      },
-      {
-        name: 'Font Awesome',
-        url: '/icons/font-awesome',
-        icon: 'icon-star',
-        badge: {
-          variant: 'secondary',
-          text: '4.7'
-        }
-      },
-      {
-        name: 'Simple Line Icons',
-        url: '/icons/simple-line-icons',
-        icon: 'icon-star'
+        name: 'Add Permission',
+        url: '/user-group-actions/new-group-action',
+        icon: 'icon-puzzle'
       }
     ]
-  },
-  {
-    name: 'Notifications',
-    url: '/notifications',
-    icon: 'icon-bell',
-    children: [
-      {
-        name: 'Alerts',
-        url: '/notifications/alerts',
-        icon: 'icon-bell'
-      },
-      {
-        name: 'Badges',
-        url: '/notifications/badges',
-        icon: 'icon-bell'
-      },
-      {
-        name: 'Modals',
-        url: '/notifications/modals',
-        icon: 'icon-bell'
-      }
-    ]
-  },
-  {
-    name: 'Widgets',
-    url: '/widgets',
-    icon: 'icon-calculator',
-    badge: {
-      variant: 'info',
-      text: 'NEW'
-    }
   },
   {
     divider: true
-  },
+  }
+  ,
   {
     title: true,
-    name: 'Extras',
+    name: 'Storefront'
   },
+
   {
-    name: 'Pages',
-    url: '/pages',
-    icon: 'icon-star',
+    name: 'Products',
+    url: '/product',
+    icon: 'icon-puzzle',
     children: [
       {
-        name: 'Login',
-        url: '/login',
-        icon: 'icon-star'
+        name: 'List Products',
+        url: '/product/products',
+        icon: 'icon-puzzle'
       },
       {
-        name: 'Register',
-        url: '/register',
-        icon: 'icon-star'
+        name: 'New Product',
+        url: '/product/new-product',
+        icon: 'icon-puzzle'
+      }
+      ,
+      {
+        name: 'Product Categories',
+        url: '/product/categories',
+        icon: 'icon-puzzle'
       },
       {
-        name: 'Error 404',
-        url: '/404',
-        icon: 'icon-star'
+        name: 'New Category',
+        url: '/product/new-category',
+        icon: 'icon-puzzle'
       },
       {
-        name: 'Error 500',
-        url: '/500',
-        icon: 'icon-star'
+        name: 'Product Offers',
+        url: '/product/offers',
+        icon: 'icon-puzzle'
+      },
+      {
+        name: 'Price Qoute',
+        url: '/product/qoutes',
+        icon: 'icon-puzzle'
+      }
+      ,
+      {
+        name: 'Product Orders',
+        url: '/product/orders',
+        icon: 'icon-puzzle'
+      }
+    ]
+  }
+  ,
+
+
+  {
+    name: 'Supplier Type',
+    url: '/supplier',
+    icon: 'icon-puzzle',
+    children: [
+      {
+        name: 'Supplier Types',
+        url: '/suppier/list-types',
+        icon: 'icon-puzzle'
+      },
+      {
+        name: 'Add Supplier Type',
+        url: '/user/add-supplier-type',
+        icon: 'icon-puzzle'
       }
     ]
   },
+
   {
-    name: 'Disabled',
-    url: '/dashboard',
-    icon: 'icon-ban',
-    badge: {
-      variant: 'secondary',
-      text: 'NEW'
-    },
-    attributes: { disabled: true },
+    name: 'Suppliers',
+    url: '/supplier',
+    icon: 'icon-puzzle',
+    children: [
+      {
+        name: 'List Suppliers',
+        url: '/supplier/list-suppliers',
+        icon: 'icon-puzzle'
+      },
+      {
+        name: 'New Supplier',
+        url: '/supplier/new-supplier',
+        icon: 'icon-puzzle'
+      }
+
+    ]
   },
+
+
+
+  {
+    name: 'Customer',
+    url: '/Customer',
+    icon: 'icon-puzzle',
+    children: [
+      {
+        name: 'List Customers',
+        url: '/customer/customers',
+        icon: 'icon-puzzle'
+      },
+      {
+        name: 'New Customer',
+        url: '/customer/new-customer',
+        icon: 'icon-puzzle'
+      }
+
+    ]
+  },
+
+
+
+  {
+    name: 'Report',
+    url: '/report',
+    icon: 'icon-puzzle',
+    children: [
+      {
+        name: 'Transaction',
+        url: '/Report/transactions',
+        icon: 'icon-puzzle'
+      }
+
+    ]
+  },
+  {
+    divider: true
+  }
+  ,
   {
     name: 'Download CoreUI',
     url: 'http://coreui.io/angular/',

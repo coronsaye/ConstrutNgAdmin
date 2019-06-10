@@ -51,36 +51,31 @@ export const routes: Routes = [
     },
     children: [
       {
-        path: 'base',
-        loadChildren: './views/base/base.module#BaseModule'
-      },
-      {
-        path: 'buttons',
-        loadChildren: './views/buttons/buttons.module#ButtonsModule'
-      },
-      {
-        path: 'charts',
-        loadChildren: './views/chartjs/chartjs.module#ChartJSModule'
+        path: 'customer',
+        loadChildren: './modules/customer/customer.module#CustomerModule'
       },
       {
         path: 'dashboard',
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
+      }
+      ,
+      {
+        path: 'user',
+        loadChildren: './modules/user/user.module#UsersModule'
       },
       {
-        path: 'icons',
-        loadChildren: './views/icons/icons.module#IconsModule'
-      },
+        path: 'user-groups',
+        loadChildren: './modules/user-groups/user-groups.module#UserGroupsModule'
+      }
+      ,
       {
-        path: 'notifications',
-        loadChildren: './views/notifications/notifications.module#NotificationsModule'
-      },
+        path: 'user-group-actions',
+        loadChildren: './modules/user-group-actions/user-group-actions.module#UserGroupActionsModule'
+      }
+      ,
       {
-        path: 'theme',
-        loadChildren: './views/theme/theme.module#ThemeModule'
-      },
-      {
-        path: 'widgets',
-        loadChildren: './views/widgets/widgets.module#WidgetsModule'
+        path: 'product',
+        loadChildren: './modules/product/product.module#ProductModule'
       }
     ]
   },
