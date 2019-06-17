@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UserGroupService } from '../../../services/user-group.service';
+import { UserGroup } from '../user-group';
+
 
 @Component({
   selector: 'app-user-groups',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserGroupsComponent implements OnInit {
 
-  constructor() { }
+  roles: UserGroup[];
+
+  constructor(private userGroupService: UserGroupService) { }
 
   ngOnInit() {
+    this.show();
+  }
+
+  show(): void {
+
+    this.userGroupService.getUserGroups()
+
+    .subscribe(roles => this.roles);
+
   }
 
 }
