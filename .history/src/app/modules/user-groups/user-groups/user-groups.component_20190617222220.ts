@@ -22,13 +22,11 @@ export class UserGroupsComponent implements OnInit {
 
   show(): void {
 
+    alert(JSON.stringify(this.userGroupService.getUserGroups()));
 
     this.userGroupService.getUserGroups()
 
-    .subscribe((data: UserGroup[]) => this.roles) = {
-
-
-    };
+    .subscribe(roles => this.roles);
 
 
 

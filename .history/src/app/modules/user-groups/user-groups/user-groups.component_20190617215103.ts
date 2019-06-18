@@ -16,21 +16,15 @@ export class UserGroupsComponent implements OnInit {
   constructor(private userGroupService: UserGroupService) { }
 
   ngOnInit() {
-    this.title = 'Role Listing';
+    this.title = "Role Listing"
     this.show();
   }
 
   show(): void {
 
-
     this.userGroupService.getUserGroups()
 
-    .subscribe((data: UserGroup[]) => this.roles) = {
-
-
-    };
-
-
+    .subscribe(roles => this.roles);
 
   }
 

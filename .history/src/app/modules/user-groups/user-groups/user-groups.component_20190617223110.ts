@@ -25,10 +25,7 @@ export class UserGroupsComponent implements OnInit {
 
     this.userGroupService.getUserGroups()
 
-    .subscribe((data: UserGroup[]) => this.roles) = {
-
-
-    };
+    .subscribe(roles => this.roles);
 
 
 

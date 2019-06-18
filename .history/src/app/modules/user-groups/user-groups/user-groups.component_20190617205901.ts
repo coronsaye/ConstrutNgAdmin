@@ -11,26 +11,18 @@ import { UserGroup } from '../user-group';
 export class UserGroupsComponent implements OnInit {
 
   roles: UserGroup[];
-  title: String;
 
   constructor(private userGroupService: UserGroupService) { }
 
   ngOnInit() {
-    this.title = 'Role Listing';
     this.show();
   }
 
   show(): void {
 
-
     this.userGroupService.getUserGroups()
 
-    .subscribe((data: UserGroup[]) => this.roles) = {
-
-
-    };
-
-
+    .subscribe(roles => this.roles);
 
   }
 
