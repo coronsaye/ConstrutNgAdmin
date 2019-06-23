@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserGroup } from '../user-group';
 
 @Component({
   selector: 'app-new-user-group',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewUserGroupComponent implements OnInit {
 
+  title: String;
+  role: UserGroup;
+
   constructor() { }
 
   ngOnInit() {
+    this.title = 'New User Group';
   }
 
 }
