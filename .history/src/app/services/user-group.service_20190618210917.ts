@@ -27,7 +27,7 @@ export class UserGroupService {
 
    // Get user groups from backend server
    getUserGroups (): Observable<UserGroup[]> {
-
+     alert(JSON.stringify(this.http.get<UserGroup[]>(this._url)))
      return this.http.get<UserGroup[]>(this._url);
     }
 }

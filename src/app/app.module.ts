@@ -40,6 +40,7 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
@@ -54,7 +55,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     HttpClientModule,
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule
   ],
   declarations: [
     AppComponent,

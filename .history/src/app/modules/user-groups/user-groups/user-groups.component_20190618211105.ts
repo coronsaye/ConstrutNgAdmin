@@ -29,10 +29,4 @@ export class UserGroupsComponent implements OnInit {
 
   }
 
-  add(): any {
-
-
-
-  }
-
 }
