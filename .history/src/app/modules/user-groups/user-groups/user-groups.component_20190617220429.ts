@@ -18,20 +18,15 @@ export class UserGroupsComponent implements OnInit {
   ngOnInit() {
     this.title = 'Role Listing';
     this.show();
-    this.title = 'User Groups';
   }
 
   show(): void {
 
-
     this.userGroupService.getUserGroups()
 
+    .subscribe(roles => this.roles);
 
-    .subscribe(roles => {
-      this.roles = roles;
-      console.log(JSON.stringify(this.roles));
-     });
-
+    alert(JSON.stringify(this.roles));
 
   }
 

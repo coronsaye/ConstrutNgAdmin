@@ -23,10 +23,8 @@ export class UserGroupService {
 
   private _url = AppSettings.API_ENDPOINT + '/roles';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { alert(JSON.stringify(this.http.get<UserGroup[]>(this._url))); }
 
    // Get user groups from backend server
-   getUserGroups (): Observable<UserGroup[]> {
-     return this.http.get<UserGroup[]>(this._url);
-    }
+   getUserGroups (): Observable<UserGroup[]> { return this.http.get<UserGroup[]>(this._url); }
 }

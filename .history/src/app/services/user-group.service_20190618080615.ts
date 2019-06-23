@@ -26,7 +26,5 @@ export class UserGroupService {
   constructor(private http: HttpClient) { }
 
    // Get user groups from backend server
-   getUserGroups (): Observable<UserGroup[]> {
-     return this.http.get<UserGroup[]>(this._url);
-    }
+   getUserGroups (): Observable<UserGroup[]> { return this.http.get<UserGroup[]>(this._url); }
 }

@@ -18,7 +18,6 @@ export class UserGroupsComponent implements OnInit {
   ngOnInit() {
     this.title = 'Role Listing';
     this.show();
-    this.title = 'User Groups';
   }
 
   show(): void {
@@ -26,11 +25,11 @@ export class UserGroupsComponent implements OnInit {
 
     this.userGroupService.getUserGroups()
 
+    .subscribe((data: UserGroup[]) => this.roles) = {
 
-    .subscribe(roles => {
-      this.roles = roles;
-      console.log(JSON.stringify(this.roles));
-     });
+
+    };
+
 
 
   }
