@@ -5,7 +5,7 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-header">
-            <h5> <i class="fa fa-plus"></i> {{caption}}</h5>
+            <h5> <i class="fa fa-plus"></i> {{title}}</h5>
           </div>
           <div class="card-body">
 
@@ -15,10 +15,10 @@
                   <form>
                     <div class="form-group">
                       <label for="userGroupName">User Group Name</label>
-                      <input type="text" class="form-control" id="userGroupName" placeholder="Enter user group name" />
+                      <input type="text" [ngModel]="role.name" class="form-control" id="userGroupName" placeholder="Enter user group name" />
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button [disabled]="!newUserGroup.valid" type="submit">Submit</button>
                   </form>
 
 

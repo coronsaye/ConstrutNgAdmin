@@ -8,7 +8,7 @@ import { UserGroup } from '../user-group';
 })
 export class NewUserGroupComponent implements OnInit {
 
-  caption: String = 'New UserGroup';
+  caption: String = 'New User Group';
   role: UserGroup;
 
   constructor() { }

@@ -8,13 +8,13 @@ import { UserGroup } from '../user-group';
 })
 export class NewUserGroupComponent implements OnInit {
 
-  caption: String = 'New UserGroup';
+  title: String;
   role: UserGroup;
 
   constructor() { }
 
   ngOnInit() {
-
+    this.title = 'New User Group';
   }
 
 }
