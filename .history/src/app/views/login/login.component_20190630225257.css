@@ -10,8 +10,10 @@
 
 .bg-g1 {
   /* The image used */
-  background: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg")no-repeat center center;
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
 
+  /* Half height */
+  height: 50%;
 
   /* Center and scale the image nicely */
   background-position: center;
