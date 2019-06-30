@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+
+body {
+    font-family: 'Montserrat';
+
+}
+
+.bkg{
+  height:40em;
+  background-size:cover;
+  width:auto;
+  background-image:url('../assets/img/backgrounds/excavators-51665_1280.jpg');
+  background-position:50% 50%;
+}

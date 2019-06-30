@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import Swal from 'sweetalert2';
+
+
 
 @Component({
   // tslint:disable-next-line
@@ -11,6 +14,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {
+      
       if (!(evt instanceof NavigationEnd)) {
         return;
       }

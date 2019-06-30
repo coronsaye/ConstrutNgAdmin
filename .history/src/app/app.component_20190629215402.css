@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+
+body {
+    font-family: 'Montserrat';
+
+}
+
+.bg{
+  height:40em;
+  background-size:cover;
+  width:auto;
+  background-image:url('copied image address');
+  background-position:50% 50%;
+}
