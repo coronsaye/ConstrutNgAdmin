@@ -10,13 +10,11 @@
 
 .bg-g1 {
   /* The image used */
-  background: url("../../../assets/img/backgrounds/excavators-51665_1280.jpg")no-repeat center center;
+  background: url("/src/assets/img/backgrounds/excavators-51665_1280.jpg")no-repeat center center;
 
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
 }
