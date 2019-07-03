@@ -15,6 +15,7 @@
                 <th>SNO.</th>
                 <th>Role Name</th>
                 <th></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -22,6 +23,7 @@
               <tr *ngFor="let role of roles">
                 <td>{{role.id}}</td>
                 <td>{{role.name}}</td>
+                <td><button (click)="display(role);" class='button'><i class="fa fa-folder"></i> Open</button></td>
                 <td><button (click)="delete(role);" class='button'><i class="fa fa-trash-o"></i> Delete</button></td>
               </tr>
 
